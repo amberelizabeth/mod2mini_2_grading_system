@@ -10,9 +10,6 @@ h1 {
     font-variant: small-caps;
     padding-bottom: 1em;
 }
-.title-hr {
-    color: #182B00;
-}
 
 
 /* 
@@ -43,6 +40,13 @@ h1 {
     background-size: cover;
 
 }
+
+@media (min-width: 1px){
+    .full-width-image{
+        min-height: 25vh;
+
+    }
+}
 @media (min-width: 500px){
     .full-width-image{
         min-height: 25vh;
@@ -71,17 +75,45 @@ h1 {
 .row p{
     padding-top: 30px;
 }
-.row > div:not(:last-child){
+.row > div:not(:last-child) {
     border-right: 1px solid #E67C05;
 }
-.header-grades{
+.header-grades {
     border-bottom: 3px solid #E67C05;
     padding-bottom: 0;
     font-size: 25px;
     font-weight: 600;
     text-transform: capitalize;
 }
-.student{
+.student {
     border-bottom: 1px solid #E67C05;
     font-size: 16px;
+}
+
+
+/*
+*  ATTENDANCE 
+*/
+.student-attend{
+    padding: 20px;
+    border: 3px solid #E67C05;
+    margin: 5px;
+}
+h2{
+    font-weight: 700;    
+}
+
+/*
+*  FOOTER
+*/
+footer {
+    background-color:#182B00;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
