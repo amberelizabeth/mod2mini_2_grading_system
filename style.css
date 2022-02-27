@@ -1,0 +1,87 @@
+/* 
+*  GLOBAL STYLES
+*/
+main {
+    font : normal 400 25px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+}
+h1 {
+    font-weight: 700;
+    font-variant: small-caps;
+    padding-bottom: 1em;
+}
+.title-hr {
+    color: #182B00;
+}
+
+
+/* 
+*  HEADER
+*/
+.navbar {
+    background-color:#E67C05;
+    font-size: larger;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-brand {
+    font-size: 30px;
+    padding: 5px;
+}
+.navbar a:hover {
+    background-color: #182B00;
+    border-radius: 10px;
+}
+.navbar-item {                            
+    padding: 5px;
+}
+.full-width-image {
+    background-image: url("./images/school-banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-size: cover;
+
+}
+@media (min-width: 500px){
+    .full-width-image{
+        min-height: 25vh;
+    }
+}
+@media (min-width: 900px){
+    .full-width-image{
+        min-height: 30vh;
+    }
+}
+@media (min-width: 1200px){
+    .full-width-image{
+        min-height: 35vh;
+    }
+}
+@media (min-width: 1500px){
+    .full-width-image{
+        min-height: 45vh;
+    }
+}
+
+
+/* 
+*  GRADES
+*/
+.row p{
+    padding-top: 30px;
+}
+.row > div:not(:last-child){
+    border-right: 1px solid #E67C05;
+}
+.header-grades{
+    border-bottom: 3px solid #E67C05;
+    padding-bottom: 0;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.student{
+    border-bottom: 1px solid #E67C05;
+    font-size: 16px;
+}
